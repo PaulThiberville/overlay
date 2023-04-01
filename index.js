@@ -31,19 +31,19 @@ const getTimer = () => {
     seconds: Math.floor((timeleft % (1000 * 60)) / 1000),
   };
   const hoursToString = remaining.hours
-    ? remaining.hours > 10
+    ? remaining.hours >= 10
       ? remaining.hours + ":"
       : "0" + remaining.hours + ":"
     : "";
 
   const minutesToString = remaining.minutes
-    ? remaining.minutes > 10
+    ? remaining.minutes >= 10
       ? remaining.minutes + ":"
       : "0" + remaining.minutes + ":"
     : "00:";
 
   const secondsToString = remaining.seconds
-    ? remaining.seconds > 10
+    ? remaining.seconds >= 10
       ? remaining.seconds
       : "0" + remaining.seconds
     : "00";

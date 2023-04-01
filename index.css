@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: system-ui;
+  font-family: consolas;
 }
 
 html,
@@ -32,6 +32,7 @@ iframe {
 
 #time {
   color: white;
+  font-weight: bold;
 }
 
 #text-wrapper {
@@ -50,11 +51,10 @@ iframe {
   color: white;
   width: fit-content;
   margin: auto;
-  font-size: 64px;
+  font-size: 256px;
   font-weight: bold;
-  padding: 48px;
-  background-color: black;
-  opacity: 0.9;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
   max-width: 80%;
   text-align: justify;
   border-radius: 4px;
